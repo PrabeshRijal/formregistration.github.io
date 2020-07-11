@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sagarmatha Registration Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <!-- sagarmatha-form-intro -->
+    <section class="registration-form-wrapper">
+        <div class="registration-image">
+            <img src="images/registration.png" alt="">
+            <img src="images/registration.png" alt="">
+        </div>
+        <div class="brand-logo"><img src="images/sagarmatha-logo.png" alt=""></div>
+        <div class="form-intro-wrapper">
+            <h1>SAGARMATHA SECONDARY SCHOOL</h1>
+            <h2>+2 SCHOOL OF SCIENCE AND MANAGEMENT</h2>
+            <h3>Nayabazar, Pokhara-9</h3>
+            <p>Tel: 061-532798, 533507</p>
+            <p>Email: info@sagarmathapokhara.edu.np</p>
+            <div class="container" id="stu-image-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="my-brand-logo" id="brand-image-align">
+                            <img src="images/sagarmatha-logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="stu-img-inline">
+                        <div class="student-img" id="student-photo-align">
+                            <p>PHOTO</p>
+                        </div>
+                        <div class="upload-btn">
+                            <button>UPLOAD PHOTO  <i class="fa fa-upload"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container application-container">
+                <div class="registration-line"></div>
+                <div class="application">
+                    <p>APPLICATION FOR CLASS XI ADMISSION</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sagarmatha-form-intro -->
+
+    <!-- basic-information-section -->
+    <section class="form-information-section mt-4">
+        <div class="container" id="my-container">
+            <div class="form-container">
+                <div class="my-header">
+                    <h1 id="heading">Basic-Information</h1>
+                </div>
+            <div class="row" id="form-alignment">
+                <div class="col-md-12">
+                    <div class="container form-padding" id="my-form">
+                        <div class="row">
+                            <div class="col-md-4 form-info">
+                                <label for="">Student's Name<span id="required">*</span></label>
+                                <input type="text" placeholder="Enter Full Name" required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Date Of Birth<span id="required">*</span></label>
+                                <input type="date" placeholder="Enter Date Of Birth" required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Symbol No.<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Symbol Number" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4 form-info">
+                                <label for="">Sex<span id="required">*</span></label>
+                                <select>
+                                    <option value="">--Select Sex--</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Program<span id="required">*</span></label>
+                                <select name="" id="">
+                                    <option value="">--Select Program--</option>
+                                    <option value="Science">Science</option>
+                                    <option value="Management">Management</option>s
+                                </select>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">schedule<span id="required">*</span></label>
+                                <select name="" id="">
+                                    <option value="">--Select schedule--</option>
+                                    <option value="Science">Day</option>
+                                    <option value="Management">Morning</option>s
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4 form-info">
+                                <label for="">Email Address<span id="required"></span></label>
+                                <input type="email" placeholder="Enter Email Address" required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Father's Name<span id="required">*</span></label>
+                                <input type="text" placeholder="Enter Father's Name" required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Father's Contact No.<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Father's Contact No." required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4 form-info">
+                                <label for="">Mother's Name<span id="required">*</span></label>
+                                <input type="text" placeholder="Enter Mother's Name" required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Mother's Contact No.<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Mother's Contact No." required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Address(Province)<span id="required">*</span></label>
+                                <select name="" id="">
+                                    <option value="">--Select Province--</option>
+                                    <option value="Bagmati">Bagmati Pradesh</option>
+                                    <option value="Gandaki">Gandaki Pradesh</option>
+                                    <option value="Karnali">Karnali Pradesh</option>
+                                    <option value="Sudurpashchim">Sudurpashchim Pradesh</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3" id="form-alignment-bottom">
+                            <div class="col-md-4 form-info">
+                                <label for="">Zone<span id="required">*</span></label>
+                                <select name="" id="">
+                                    <option value="">--Select Zone--</option>
+                                    <option value="Bagmati">Bagmati</option>
+                                    <option value="Gandaki">Gandaki</option>
+                                    <option value="Karnali">Karnali</option>
+                                    <option value="Mechi">Mechi</option>
+                                    <option value="Janakpur">Janakpur</option>
+                                    <option value="Janakpur">Lumbini</option>
+                                    <option value="Janakpur">Rapti</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">District<span id="required">*</span></label>
+                                <select name="" id="">
+                                    <option value="">--Select District--</option>
+                                    <option value="Achham">Achham</option>
+                                    <option value="Arghakhanchi">Arghakhanchi</option>
+                                    <option value="Baglung">Baglung</option>
+                                    <option value="Baitadi">Baitadi</option>
+                                    <option value="Bajhang">Bajhang</option>
+                                    <option value="Bajura">Bajura</option>
+                                    <option value="Banke">Banke</option>
+                                    <option value="Bara">Bara</option>
+                                    <option value="Bardiya">Bardiya</option>
+                                    <option value="Bhaktapur">Bhaktapur</option>
+                                    <option value="Bhojpur">Bhojpur</option>
+                                    <option value="Chitwan">Chitwan</option>
+                                    <option value="Dadeldhura">Dadeldhura</option>
+                                    <option value="Dailekh">Dailekh</option>
+                                    <option value="Dang">Dang</option>
+                                    <option value="Darchula">Darchula</option>
+                                    <option value="Dhading">Dhading</option>
+                                    <option value="Dhankuta">Dhankuta</option>
+                                    <option value="Dhanusa">Dhanusa</option>
+                                    <option value="Dolakha">Dolakha</option>
+                                    <option value="Dolpa">Dolpa</option>
+                                    <option value="Doti">Doti</option>
+                                    <option value="Eastern Rukum">Eastern Rukum</option>
+                                    <option value="Gorkha">Gorkha</option>
+                                    <option value="Gulmi">Gulmi</option>
+                                    <option value="Humla">Humla</option>
+                                    <option value="Ilam">Ilam</option>
+                                    <option value="Jajarkot">Jajarkot</option>
+                                    <option value="Jhapa">Jhapa</option>
+                                    <option value="Jumla">Jumla</option>
+                                    <option value="Kailali">Kailali</option>
+                                    <option value="Kalikot">Kalikot</option>
+                                    <option value="Kanchanpur">Kanchanpur</option>
+                                    <option value="Kapilvastu">Kapilvastu</option>
+                                    <option value="Kaski">Kaski</option>
+                                    <option value="Kathmandu">Kathmandu</option>
+                                    <option value="Kavrepalanchok">Kavrepalanchok</option>
+                                    <option value="Khotang">Khotang</option>
+                                    <option value="Lalitpur">Lalitpur</option>
+                                    <option value="Lamjung">Lamjung</option>
+                                    <option value="Mahottari">Mahottari</option>
+                                    <option value="Makawanpur">Makawanpur</option>
+                                    <option value="Manang">Manang</option>
+                                    <option value="Morang">Morang</option>
+                                    <option value="Mugu">Mugu</option>
+                                    <option value="Mustang">Mustang</option>
+                                    <option value="Myagdi">Myagdi</option>
+                                    <option value="Nawalpur">Nawalpur</option>
+                                    <option value="Nuwakot">Nuwakot</option>
+                                    <option value="Okhaldhunga">Okhaldhunga</option>
+                                    <option value="Palpa">Palpa</option>
+                                    <option value="Panchthar">Panchthar</option>
+                                    <option value="Parasi">Parasi</option>
+                                    <option value="Parbat">Parbat</option>
+                                    <option value="Parsa">Parsa</option>
+                                    <option value="Pyuthan">Pyuthan</option>
+                                    <option value="Ramechhap">Ramechhap</option>
+                                    <option value="Rasuwa">Rasuwa</option>
+                                    <option value="Rautahat">Rautahat</option>
+                                    <option value="Rolpa">Rolpa</option>
+                                    <option value="Rupandehi">Rupandehi</option>
+                                    <option value="Salyan">Salyan</option>
+                                    <option value="Sankhuwasabha">Sankhuwasabha</option>
+                                    <option value="Saptari">Saptari</option>
+                                    <option value="Sarlahi">Sarlahi</option>
+                                    <option value="Sindhuli">Sindhuli</option>
+                                    <option value="Sindhupalchowk">Sindhupalchowk</option>
+                                    <option value="Siraha">Siraha</option>
+                                    <option value="Solukhumbu">Solukhumbu</option>
+                                    <option value="Sunsari">Sunsari</option>
+                                    <option value="Surkhet">Surkhet</option>
+                                    <option value="Syangja">Syangja</option>
+                                    <option value="Tanahun">Tanahun</option>
+                                    <option value="Taplejung">Taplejung</option>
+                                    <option value="Western Rukum">Western Rukum</option>
+                                    <option value="Terhathum">Terhathum</option>
+                                    <option value="Udayapur">Udayapur</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">Muncipality<span id="required">*</span></label>
+                                <input type="text" placeholder="Enter Muncipality" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- basic-information-section -->
+
+
+      <!-- Academic Details (Grade X) -->
+      <section class="form-information-section mt-5">
+        <div class="container" id="my-container">
+            <div class="form-container">
+                <div class="my-header" id="academic-qualification">
+                    <h1 id="heading">Academic Details (Grade X)</h1>
+                </div>
+            <div class="row" id="form-alignment">
+                <div class="col-md-12">
+                    <div class="container form-padding" id="my-form">
+                        <div class="row">
+                            <div class="col-md-4 form-info">
+                                <label for="">School Name<span id="required">*</span></label>
+                                <input type="text" placeholder="Enter School Address" required>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">School Type</label>
+                                <select>
+                                    <option value="">--Select--</option>
+                                    <option value="Government">Government</option>
+                                    <option value="Community">Community</option>
+                                    <option value="Private">Private</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 form-info">
+                                <label for="">School Address<span id="required">*</span></label>
+                                <input type="text" placeholder="Enter School Name" required>
+                            </div>
+                        </div>
+                        <div class="row mt-3">   
+                            <div class="col-md-4">
+                                <label for="">CGPA In Send-Up<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter CGPA In Send-Up">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">Rank In Sent-Up<span id="required">*</span></label>
+                                <select>
+                                    <option value="">--Select Your Position--</option>
+                                    <option value="Topper">1st Topper</option>
+                                    <option value="SecondToper">2nd Topper</option>
+                                    <option value="ThirdTopper">3rd Topper</option>
+                                    <option value="Others">Others</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">Interested Course (Science)</label>
+                                <select>
+                                    <option value="">--Select Subject--</option>
+                                    <option value="Big">Biology</option>
+                                    <option value="Math">Mathematics</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">   
+                            <div class="col-md-4">
+                                <label for="">SEE Grade In Science<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Grade in Science">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">SEE Grade In Comp.Math<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Comp.Math Grade">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">SEE Grade In Opt.Math<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Opt.Math Grade">
+                            </div>
+                        </div>
+                        <div class="row mt-3">   
+                            <div class="col-md-4">
+                                <label for="">SEE Grade In English<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter Grade in English">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="">Total SEE CGPA<span id="required">*</span></label>
+                                <input type="number" placeholder="Enter total CGPA in SEE">
+                            </div>
+                            <div class="col-md-4" id="form-alignment-bottom">
+                                <label for="">Upload SEE Gradesheet<span id="required">*</span></label>
+                                <div class="custom-file" id="custom-file">
+                                    <input type="file" class="custom-file-input" id="customFile" name="filename">
+                                    <label class="custom-file-label" for="customFile">Choose File</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Academic Details (Grade X) -->
+
+    <!-- form-conformation -->
+    <section class="form-conformation-section">
+        <div class="form-agree">
+            <div class="container"><hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="d-inline-info">
+                            <label class="radio" id="radio">
+                                <input type="checkbox" name="check">
+                            </label>
+                        </div>
+                        <div id="d-inline-info">
+                            <p>I confirm that details given above are true and correct. If the details given above are found to be incorrect, I will be ready to accept any action taken by the school in this repect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="submit-section d-flex justify-content-center">
+            <div class="submit-btn">
+                <button>Submit Form <i class="fa fa-send"></i></button>
+            </div>
+            <div class="cancel-btn">
+                <button>Cancel Form <i class="fa fa-close"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- form-conformation -->
+
+
+<script src="js/my-js.js"></script>
+</body>
+</html>

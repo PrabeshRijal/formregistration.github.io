@@ -1,0 +1,696 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Montserrat', sans-serif;
+}
+ul, li, ol, span, a
+{
+    font-family: 'Montserrat', sans-serif;
+}
+button
+{
+    outline: 0; 
+    border: 0; 
+    background: none; 
+    cursor: pointer; 
+    font-family: 'Montserrat', sans-serif;
+}
+/* ------------------*/
+.registration-form-wrapper
+{
+    overflow: hidden;
+}
+.brand-logo 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.brand-logo img
+{
+    height: auto;
+    width: 8%;
+}
+.registration-image img:nth-child(1)
+{
+    position: absolute;
+    opacity: 0.05;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 30%;
+}
+.registration-image img:nth-child(2)
+{
+    position: absolute;
+    opacity: 0.05;
+    top: 0;
+    right: 0;
+    height: 20%;
+    animation-delay: 2s;
+}
+.registration-image img
+{
+    animation: registration-animation 5s linear infinite;
+}
+@keyframes registration-animation
+{
+    0%
+    {
+        transform: translateY(0px);
+    }
+    50%
+    {
+        transform: translateY(-15px);
+    }
+    100%
+    {
+        transform: translateY(0px);
+    }
+}
+.form-intro-wrapper h1
+{
+    text-align: center;
+    font-size: 42px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px #000000bf;
+    color: #148fe0;
+}
+.form-intro-wrapper h2
+{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 2px #000000bf;
+    color: rgb(61, 58, 58);
+}
+.form-intro-wrapper h3
+{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+.form-intro-wrapper p
+{
+    text-align: center;
+    font-weight: 600;
+    line-height: 9px;
+    color: #000;
+}
+.registration-line
+{
+    height: 3px;
+    width: 100%;
+    background: #d3d6d8;
+    margin-top: 50px;
+}
+.application-container
+{
+    margin-bottom: 10px;
+}
+.application
+{
+    background: #148fe0;
+    height: 40px;
+    width: 400px;
+    box-shadow: 0 0 5px 0 #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding-top: 15px;
+    margin: auto;
+    margin-top: -23px;
+}
+.application p
+{
+    text-align: center;
+    font-weight: 750;
+    line-height: 9px;
+    font-size: 18px;
+    color: #fff !important;
+}
+#my-container
+{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px 1px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.08);
+}
+.form-container
+{
+    position: relative;
+    border-radius: 10px;
+    padding: 20px 10px;
+    border:2px solid #148fe0;
+}
+.my-header 
+{
+    height: 40px;
+    width: 230px;
+    text-align: center;
+    position: absolute;
+    left: 30px;
+    background: #fff !important;
+    box-shadow: 0 4px 20px 1px rgba(0,0,0,.06), 0 1px 4px rgba(0,0,0,.08);
+    margin-top: -42px;
+    border-radius: 5px;
+}
+.my-header #heading 
+{
+    font-size: 20px;
+    color: #000 !important;
+    font-weight: 600;
+    padding: 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    padding-top: 8px;
+}
+#form-alignment
+{
+    margin-top: 30px;
+}
+#form-alignment-bottom
+{
+    margin-bottom: 20px;
+}
+.form-padding
+{
+    padding-left: 60px;
+}
+#my-form .custom-file
+{
+    height: 30px;
+    width: 275px;
+    outline: none;
+    border: 1px solid rgb(141, 137, 137);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000 !important;
+    background: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+}
+#my-form .custom-file-label
+{
+    padding: 7px 8px;
+    top: -4px;
+    height: 30px;
+    width: 275px;
+    border: none;
+    border-radius: 5px;
+    color: rgb(158, 153, 153);
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+#my-form .custom-file-label::after
+{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    display: block;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    color: #495057;
+    content: "Browse";
+    background-color: #e9ecef;
+    border-left: inherit;
+    outline: none;
+    border: transparent;
+    border-radius: 0 .25rem .25rem 0;
+}
+.student-img
+{
+    height: 120px;
+    width: 120px;
+    background: #f8f8f8;
+    border: 2px solid #858080;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+#stu-img-inline
+{
+    display: inline-grid;
+    justify-content: end;
+}
+.student-img p
+{
+    font-size: 16px;
+    font-weight: 400;
+    color: #b1b3b4;
+}
+.upload-btn
+{
+    text-align: center;
+    margin-top: 5px;
+}
+.my-brand-logo img
+{
+    height: auto;
+    width: 20%;
+}
+#stu-image-container
+{
+    margin-top: -130px;
+}
+.upload-btn button
+{
+    background: transparent;
+    font-size: 12px;
+    font-weight: 600;
+    color: #148fe0;
+    outline: none;
+    border-radius: 8px;
+    transition: 0.6s;
+}
+.upload-btn button:hover
+{
+    color: #000 !important;
+}
+#my-form  label
+{
+    color: #000 !important;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+}
+#my-form  input, #my-form  select
+{
+    height: 30px;
+    width: 275px;
+    outline: none;
+    border: 1px solid rgb(141, 137, 137);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000 !important;
+    background: #f8f8f8;
+    font-family: 'Montserrat', sans-serif;
+}
+#required
+{
+    color: rgb(250, 33, 33);
+}
+#my-form input:focus
+{
+    box-shadow: 0 0 3px 0 #148fe0;
+    border: 1px solid #148fe0;
+}
+::placeholder
+{
+    color: rgb(158, 153, 153);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+#academic-qualification
+{
+    width: 325px;
+}
+#radio input
+{
+    height: auto;
+    width: 40px;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #000 !important;
+    font-family: 'Montserrat', sans-serif;
+}
+#radio input:focus
+{
+    box-shadow: none;
+    border: none;
+}
+#d-inline-info
+{
+    display: table-cell;
+}
+#d-inline-info p
+{
+    font-weight: 600;
+    color: rgb(119, 106, 106);
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 2.5px;
+    font-size: 14px;
+}
+.submit-btn button
+{
+    background: #148fe0;
+    height: 38px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
+.cancel-btn button
+{
+    background: rgb(218, 15, 15);
+    height: 38px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 8px;
+}
+.submit-btn, .cancel-btn
+{
+    display: inline-flex;
+    margin: 10px;
+    transition: 0.5s;
+    margin-bottom: 50px;
+}
+.submit-btn:hover, .cancel-btn:hover
+{
+    transform: translateY(-5px);
+}
+/* responsiveness */
+@media only screen and (max-width: 1600px) 
+{
+    .brand-logo img
+    {
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) 
+{
+    #stu-image-container
+    {
+        margin-top: -125px;
+    }
+    .form-padding
+    {
+        padding-left: 20px;
+    }
+}
+@media only screen and (max-width: 992px) 
+{
+    #student-photo-align
+    {
+        margin-top: 45px;
+    }
+    #brand-image-align
+    {
+        margin-top: 54px;
+    }
+    #brand-image-align img
+    {
+        width: 32%;
+    }
+    #my-form input, #my-form select
+    {
+        width: 200px;
+    }
+    #my-form .custom-file
+    {
+        width: 200px;
+    }
+    #my-form label
+    {
+        font-size: 14px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 800px)
+{
+    .form-intro-wrapper h1
+    {
+        font-size: 38px;
+    }
+} 
+@media only screen and (max-width: 770px)
+{
+    #my-form input, #my-form select
+    {
+        width: 207px;
+    }
+    #my-form .custom-file
+    {
+        width: 207px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 207px;
+    }
+}
+@media only screen and (max-width: 767px)
+{
+    .brand-logo img
+    {
+        display: block;
+        width: 12%;
+    }
+    .my-brand-logo img
+    {
+        display: none;
+    }
+    .form-intro-wrapper h1
+    {
+        font-size: 34px;
+    }
+    .form-intro-wrapper h2
+    {
+        font-size: 25px;
+    }
+    #brand-image-align img
+    {
+        display: none;
+    }
+    #stu-image-container
+    {
+        margin-top: -85px;
+    }
+    #stu-img-inline
+    {
+        justify-content: space-around;
+    }
+    #my-form input, #my-form select
+    {
+        width: 455px;
+    }
+    #my-form .custom-file
+    {
+        width: 455px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 455px;
+    }
+}
+@media only screen and (max-width: 662px)
+{
+    .form-intro-wrapper h1
+    {
+        font-size: 30px;
+    }
+    .form-intro-wrapper h2
+    {
+        font-size: 20px;
+    }
+    .submit-btn button
+    {
+        width: 108px;
+        font-size: 12px;
+    }
+    .cancel-btn button
+    {
+        width: 108px;
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 579px)
+{
+    .form-intro-wrapper h1
+    {
+        font-size: 28px;
+    }
+    .form-intro-wrapper h2
+    {
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 542px)
+{
+    .form-intro-wrapper h1
+    {
+        font-size: 25px;
+    }
+    .form-intro-wrapper h2
+    {
+        font-size: 18px;
+    }
+    .form-padding
+    {
+        padding-left: 12px;
+    }
+}
+@media only screen and (max-width: 528px)
+{
+    #my-form input, #my-form select
+    {
+        width: 430px;
+    }
+    #my-form .custom-file
+    {
+        width: 430px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 430px;
+    }
+}
+@media only screen and (max-width: 504px)
+{
+    #my-form input, #my-form select
+    {
+        width: 400px;
+    }
+    #my-form .custom-file
+    {
+        width: 400px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 400px;
+    }
+}
+@media only screen and (max-width: 476px)
+{
+    #my-form input, #my-form select
+    {
+        width: 375px;
+    }
+    #my-form .custom-file
+    {
+        width: 375px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 375px;
+    }
+}
+@media only screen and (max-width: 450px)
+{
+    .application
+    {
+        width: 330px;
+    }
+    .application p
+    {
+        font-size: 14px;
+    }
+    .my-header #heading
+    {
+        font-size: 16px;
+        padding-top: 12px;
+    }
+    .my-header
+    {
+        left: 8px;
+    }
+}
+@media only screen and (max-width: 446px)
+{
+    #my-form input, #my-form select
+    {
+        width: 350px;
+    }
+    #my-form .custom-file
+    {
+        width: 350px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 350px;
+    }
+}
+@media only screen and (max-width: 426px)
+{
+    #my-form input, #my-form select
+    {
+        width: 300px;
+    }
+    #my-form .custom-file
+    {
+        width: 300px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 300px;
+    }
+}
+@media only screen and (max-width: 394px)
+{
+    #my-form input, #my-form select
+    {
+        width: 300px;
+    }
+    #my-form .custom-file
+    {
+        width: 300px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 300px;
+    }
+    .application
+    {
+        width: 300px;
+    }
+    .application p
+    {
+        font-size: 14px;
+    }
+    #academic-qualification
+    {
+        width: 270px;
+    }
+}
+@media only screen and (max-width: 370px)
+{
+    #my-form input, #my-form select
+    {
+        width: 250px;
+    }
+    #my-form .custom-file
+    {
+        width: 250px;
+    }
+    #my-form .custom-file-label
+    {
+        width: 250px;
+    }
+}
+@media only screen and (max-width: 340px)
+{
+    .application
+    {
+        width: 250px;
+    }
+    .application p
+    {
+        font-size: 12px;
+    }
+    #academic-qualification
+    {
+        width: 250px;
+    }
+}
+/* responsiveness */
