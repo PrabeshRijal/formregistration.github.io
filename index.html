@@ -90,18 +90,16 @@
                             </div>
                             <div class="col-md-4 form-info">
                                 <label for="">Program<span id="required">*</span></label>
-                                <select name="" id="">
+                                <select name="program" id="input" onchange="random()">
                                     <option value="">--Select Program--</option>
-                                    <option value="Science">Science</option>
-                                    <option value="Management">Management</option>s
+                                    <option value="science">Science</option>
+                                    <option value="management">Management</option>s
                                 </select>
                             </div>
                             <div class="col-md-4 form-info">
                                 <label for="">schedule<span id="required">*</span></label>
-                                <select name="" id="">
-                                    <option value="">--Select schedule--</option>
-                                    <option value="Science">Day</option>
-                                    <option value="Management">Morning</option>s
+                                <select  id="output">
+                                    <option value="">--Select Schedule--</option>
                                 </select>
                             </div>
                         </div>
@@ -266,24 +264,15 @@
                                 <input type="text" placeholder="Enter School Address" required>
                             </div>
                             <div class="col-md-4 form-info">
-                                <label for="">School Type</label>
-                                <select>
-                                    <option value="">--Select--</option>
-                                    <option value="Government">Government</option>
-                                    <option value="Community">Community</option>
-                                    <option value="Private">Private</option>
-                                </select>
-                            </div>
-                            <div class="col-md-4 form-info">
                                 <label for="">School Address<span id="required">*</span></label>
                                 <input type="text" placeholder="Enter School Name" required>
                             </div>
-                        </div>
-                        <div class="row mt-3">   
-                            <div class="col-md-4">
+                            <div class="col-md-4 form-info">
                                 <label for="">CGPA In Send-Up<span id="required">*</span></label>
                                 <input type="number" placeholder="Enter CGPA In Send-Up">
                             </div>
+                        </div>
+                        <div class="row mt-3">   
                             <div class="col-md-4">
                                 <label for="">Rank In Sent-Up<span id="required">*</span></label>
                                 <select>
@@ -296,18 +285,18 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="">Interested Course (Science)</label>
-                                <select>
+                                <select id="interested">
                                     <option value="">--Select Subject--</option>
                                     <option value="Big">Biology</option>
                                     <option value="Math">Mathematics</option>
                                 </select>
                             </div>
-                        </div>
-                        <div class="row mt-3">   
                             <div class="col-md-4">
                                 <label for="">SEE Grade In Science<span id="required">*</span></label>
                                 <input type="number" placeholder="Enter Grade in Science">
                             </div>
+                        </div>
+                        <div class="row mt-3">   
                             <div class="col-md-4">
                                 <label for="">SEE Grade In Comp.Math<span id="required">*</span></label>
                                 <input type="number" placeholder="Enter Comp.Math Grade">
@@ -316,22 +305,25 @@
                                 <label for="">SEE Grade In Opt.Math<span id="required">*</span></label>
                                 <input type="number" placeholder="Enter Opt.Math Grade">
                             </div>
-                        </div>
-                        <div class="row mt-3">   
                             <div class="col-md-4">
                                 <label for="">SEE Grade In English<span id="required">*</span></label>
                                 <input type="number" placeholder="Enter Grade in English">
                             </div>
+                        </div>
+                        <div class="row mt-3">   
                             <div class="col-md-4">
                                 <label for="">Total SEE CGPA<span id="required">*</span></label>
                                 <input type="number" placeholder="Enter total CGPA in SEE">
                             </div>
-                            <div class="col-md-4" id="form-alignment-bottom">
+                            <div class="col-md-4">
                                 <label for="">Upload SEE Gradesheet<span id="required">*</span></label>
                                 <div class="custom-file" id="custom-file">
                                     <input type="file" class="custom-file-input" id="customFile" name="filename">
                                     <label class="custom-file-label" for="customFile">Choose File</label>
                                 </div>
+                            </div>
+                            <div class="col-md-4" id="form-alignment-bottom">
+                                
                             </div>
                         </div>
                     </div>
@@ -370,8 +362,6 @@
         </div>
     </section>
     <!-- form-conformation -->
-
-
 <script src="js/my-js.js"></script>
 </body>
 </html>
